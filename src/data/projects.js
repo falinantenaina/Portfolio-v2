@@ -13,6 +13,7 @@ export const projects = [
     repo: "#",
     featured: false,
     status: "Livré",
+    url: "https://cotram-plus.vercel.app/",
   },
   {
     num: "002",
@@ -28,6 +29,7 @@ export const projects = [
     repo: "#",
     featured: false,
     status: "Livré",
+    url: "https://3legant-roan.vercel.app/",
   },
   {
     num: "003",
@@ -43,6 +45,7 @@ export const projects = [
     repo: "#",
     featured: true,
     status: "En ligne",
+    url: "https://movie-mg.vercel.app/",
   },
   {
     num: "004",
@@ -58,6 +61,7 @@ export const projects = [
     repo: "#",
     featured: false,
     status: "Livré",
+    url: "https://estatein-mg.netlify.app/",
   },
 
   {
