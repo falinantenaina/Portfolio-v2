@@ -1,3 +1,7 @@
+import { ArrowUpRight, ExternalLink, Github, X } from "lucide-react";
+import { Link } from "react-router-dom";
+import { StatusBadge } from "./StatusBadge";
+
 export const Lightbox = ({ project, onClose }) => {
   if (!project) return null;
   const {
