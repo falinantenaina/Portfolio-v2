@@ -1,5 +1,4 @@
 import { ArrowUpRight } from "lucide-react";
-import { ProjectMockup } from "../ProjectMockup";
 import { StatusBadge } from "./StatusBadge";
 
 export const ProjectCard = ({ project, index, onOpen }) => {
@@ -28,11 +27,10 @@ export const ProjectCard = ({ project, index, onOpen }) => {
         className="relative overflow-hidden"
         style={{ height: 200, background: "#0d0d0d" }}
       >
-        {image ? (
+        {image && 
           <img src={image} alt={title} className="w-full h-full object-fill" />
-        ) : (
-          <ProjectMockup type={mockupType} accent={accent} />
-        )}
+}
+
 
         {/* Hover overlay */}
         <div
