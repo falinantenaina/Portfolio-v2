@@ -151,7 +151,7 @@ export default function Skills() {
 
                   {/* Center logo */}
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-xl glass flex items-center justify-center border border-border z-10">
-                    <img src="/icons/nextdotjs.svg" alt="Next.js" className="w-10 h-10 invert" />
+                    <img src="/icons/nodedotjs.svg" alt="Node.js" className="w-10 h-10 invert" />
                   </div>
                 </div>
               )}
@@ -168,27 +168,7 @@ export default function Skills() {
               </div>
             </div>
 
-            <div className="grid grid-cols-3 gap-3 sm:gap-4">
-              {[
-                { value: "8+", label: "Projets" },
-                { value: "3+", label: "Années" },
-                { value: "15+", label: "Technos" },
-              ].map(({ value, label }) => (
-                <div
-                  key={label}
-                  className="rounded-xl p-3 sm:p-5 text-center border border-border bg-navy-light/50 card-interactive"
-                >
-                  <p className="font-display font-extrabold text-2xl sm:text-3xl mb-1 text-ink">
-                    {value}
-                  </p>
-                  <p className="font-mono text-[8px] sm:text-[9px] text-slate tracking-[2px] sm:tracking-[3px] uppercase">
-                    {label}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            <p className="text-slate text-xs font-body leading-relaxed italic text-center">
+            <p className="text-slate text-xs font-body leading-relaxed italic text-center mt-6">
               &quot;J&apos;apprends en permanence. Ce que tu vois là n&apos;est
               qu&apos;un snapshot.&quot;
             </p>
