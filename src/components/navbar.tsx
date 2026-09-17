@@ -83,7 +83,7 @@ export default function Navbar() {
         </ul>
 
         <a
-          href="mailto:contact@falinantenaina.com"
+          href="mailto:nantenainaranaivojaona96@gmail.com"
           className="hidden md:inline-flex items-center gap-2 text-xs font-mono font-medium text-navy bg-accent px-5 py-2.5 rounded-lg hover:bg-ink transition-all duration-300"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-navy animate-pulse-dot" />
