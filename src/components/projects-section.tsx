@@ -182,7 +182,7 @@ function CompactCard({ project, index }: { project: Project; index: number }) {
               </span>
             </div>
           )}
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-navy/50 sm:bg-gradient-to-r sm:from-transparent sm:to-navy/80" />
+          <div className="absolute inset-0 bg-linear-to-r from-transparent to-navy/50 sm:bg-linear-to-r sm:from-transparent sm:to-navy/80" />
         </div>
 
         {/* Content */}
