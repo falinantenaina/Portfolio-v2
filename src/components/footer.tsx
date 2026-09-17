@@ -1,6 +1,5 @@
 "use client";
 
-import { Heart } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export default function Footer() {
@@ -48,8 +47,7 @@ export default function Footer() {
           </div>
 
           <p className="font-mono text-[10px] text-slate flex items-center gap-1.5">
-            &copy; {year}
-            <Heart size={10} className="text-muted/50" />
+            &copy; copyright {year}
           </p>
         </div>
       </div>

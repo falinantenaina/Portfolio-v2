@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Syne, DM_Sans, JetBrains_Mono } from "next/font/google";
+import { DM_Sans, JetBrains_Mono, Syne } from "next/font/google";
 import "./globals.css";
 
 const syne = Syne({
@@ -21,7 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Falinantenaina — Développeur Web",
+  title: "Nantenaina — Développeur Web",
   description:
     "Développeur web freelance spécialisé en frontend, backend et full stack. Je crée des sites modernes, rapides et adaptés à vos besoins.",
 };
