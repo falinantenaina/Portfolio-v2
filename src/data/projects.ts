@@ -65,7 +65,7 @@ export const projects: Project[] = [
     image: "/assets/cotram.webp",
     featured: true,
     status: "En ligne",
-    url: "https://cotram-plus.vercel.app",
+    url: "https://api.nragency.tech",
   },
   {
     num: "004",
