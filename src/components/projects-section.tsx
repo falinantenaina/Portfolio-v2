@@ -11,6 +11,7 @@ const rest = allProjects.filter((p) => !p.featured);
 
 function FeaturedCard({ project, index }: { project: Project; index: number }) {
   const isLarge = index === 0;
+  const href = project.url || project.repo || undefined;
 
   return (
     <article
@@ -34,6 +35,17 @@ function FeaturedCard({ project, index }: { project: Project; index: number }) {
             background: "#0a0e1a",
           }}
         >
+          {href ? (
+            <Link
+              href={href}
+              target="_blank"
+              rel="noreferrer"
+              className="absolute inset-0 z-10"
+            >
+              <span className="sr-only">Voir le projet</span>
+            </Link>
+          ) : null}
+
           {project.image ? (
             <img
               src={project.image}
@@ -67,11 +79,13 @@ function FeaturedCard({ project, index }: { project: Project; index: number }) {
           )}
 
           {/* Hover overlay */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 bg-navy/60 backdrop-blur-sm">
-            <span className="inline-flex items-center gap-2 font-display text-sm font-bold text-white px-6 py-3 rounded-xl bg-accent/15 border border-accent/30 backdrop-blur-md translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-              Voir le projet <ArrowUpRight size={14} />
-            </span>
-          </div>
+          {href && (
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 bg-navy/60 backdrop-blur-sm pointer-events-none">
+              <span className="inline-flex items-center gap-2 font-display text-sm font-bold text-white px-6 py-3 rounded-xl bg-accent/15 border border-accent/30 backdrop-blur-md translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                Voir le projet <ArrowUpRight size={14} />
+              </span>
+            </div>
+          )}
         </div>
 
         {/* Content */}
